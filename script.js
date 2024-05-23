@@ -77,7 +77,9 @@ function clearForm(){
   for(const container of inputContainers) {
     container.innerHTML = "";
   }
-  budgerNumberInput.value = "";
+  budgetNumberInput.value = "";
+  output.innerText = "";
+  output.classList.add("hide");
 }
 
   addEntryButton.addEventListener("click", addEntry);
