@@ -72,7 +72,12 @@ function addEntry() {
     return calories;
   }
 function clearForm(){
-  const inputContainer = document.querySelectorAll(".input-container");
+  const inputContainer = Array.from(document.querySelectorAll(".input-container"));
+
+  for(const container of inputContainers) {
+    container.innerHTML = "";
+  }
+  budgerNumberInput.value = "";
 }
 
   addEntryButton.addEventListener("click", addEntry);
