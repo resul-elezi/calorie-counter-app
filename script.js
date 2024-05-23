@@ -51,6 +51,7 @@ function addEntry() {
     <p>${budgetCalories} Calories Budgeted</p>
     <p>${consumedCalories} Calories Consumed</p>
     <p>${exerciseCalories} Calories Burned</p>`;
+
     output.classList.remove("hide");
   }
 
@@ -70,4 +71,9 @@ function addEntry() {
     }
     return calories;
   }
+function clearForm(){
+  const inputContainer = document.querySelectorAll(".input-container");
+}
+
   addEntryButton.addEventListener("click", addEntry);
+  calorieCounter.addEventListener("submit", calculateCalories);
