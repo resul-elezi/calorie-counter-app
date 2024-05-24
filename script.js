@@ -64,7 +64,7 @@ function calculateCalories(e) {
   <p>${exerciseCalories} Calories Burned</p>
   `;
 
-  output.classList.remove('hide');
+  output.classList.remove("hide");
 }
 
 function getCaloriesFromInputs(list) {
@@ -85,15 +85,15 @@ function getCaloriesFromInputs(list) {
 }
 
 function clearForm() {
-  const inputContainers = Array.from(document.querySelectorAll('.input-container'));
+  const inputContainers = Array.from(document.querySelectorAll(".input-container"));
 
   for (const container of inputContainers) {
-    container.innerHTML = '';
+    container.innerHTML = "";
   }
 
-  budgetNumberInput.value = '';
-  output.innerText = '';
-  output.classList.add('hide');
+  budgetNumberInput.value = "";
+  output.innerText = "";
+  output.classList.add("hide");
 }
 
 addEntryButton.addEventListener("click", addEntry);
